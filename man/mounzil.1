@@ -1,0 +1,120 @@
+.TH "mounzil" "1" "February 27, 2023" "1.0.0" "mounzil"
+.SH NAME
+mounzil \- Mounzil
+.
+.nr rst2man-indent-level 0
+.
+.de1 rstReportMargin
+\\$1 \\n[an-margin]
+level \\n[rst2man-indent-level]
+level margin: \\n[rst2man-indent\\n[rst2man-indent-level]]
+-
+\\n[rst2man-indent0]
+\\n[rst2man-indent1]
+\\n[rst2man-indent2]
+..
+.de1 INDENT
+.\" .rstReportMargin pre:
+. RS \\$1
+. nr rst2man-indent\\n[rst2man-indent-level] \\n[an-margin]
+. nr rst2man-indent-level +1
+.\" .rstReportMargin post:
+..
+.de UNINDENT
+. RE
+.\" indent \\n[an-margin]
+.\" old: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.nr rst2man-indent-level -1
+.\" new: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.in \\n[rst2man-indent\\n[rst2man-indent-level]]u
+..
+.\" Man page generated from reStructuredText.
+.
+.SH SYNOPSIS
+.sp
+\fBmounzil\fP --link [<URI>] [<OPTIONS>]
+.SH DESCRIPTION
+.sp
+Mounzil is a feature-full utility for easier and faster downloads with aria2.
+It support HTTP(S) & FTP.Mounzil configures aria2 automatically
+for maximum speed and it has a GUI for the ease of use.
+You can adjust start time and end time for downloads.Mounzil can shutdown 
+system after download. You can integrate mounzil with your browser(read mounzil wiki on github page).
+.SH OPTIONS
+.SS Basic Options
+.INDENT 0.0
+.TP
+.B \--link
+Your Download link.(Use "" for links)
+
+$ mounzil --link "https://www.google.com/images/srpr/logo11w.png"
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \--referrer
+Set an http referrer (Referer). This affects all http/https downloads.  If * is given, the download URI is also used as the referrer.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \--cookie
+Set cookie
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \--agent
+Set user agent for HTTP(S) downloads.  Default: aria2/$VERSION, $VERSION is replaced by package version.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \--headers
+Append HEADER to HTTP request header.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \--name
+The file name of the downloaded file.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \--default
+Restore default settings.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \--clear
+Clear download list and user setting!
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \--tray
+Mounzil starts in tray icon. It's useful when you want to put Mounzil in system's startup.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \--version
+Showing mounzil version.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \--help
+Mounzil help.
+.UNINDENT
+.INDENT 0.0
+.TP
+.SH MORE HELP
+for configuration with firefox flashgot please see README.md file on github
+https://github.com/devacom/mounzil
+
+.SH SEE ALSO
+ aria2c(1)
+
+.SH AUTHOR
+.B Taha H. Nouibat
+.UNINDENT
+.INDENT 0.0
+.TP
+.B Github page
+https://github.com/devacom/mounzil
+.UNINDENT
+.INDENT 0.0
+.TP
