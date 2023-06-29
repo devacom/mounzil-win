@@ -213,7 +213,7 @@ class AboutWindow_Ui(QWidget):
         self.developers_title_label.setText(QCoreApplication.translate('about_ui_tr', 'Developers:'))
 
         self.name_label.setText(QCoreApplication.translate("about_ui_tr",
-                                                           "\nTaha H. Nouibat\nThanks to perseplis developers:\nAliReza AmirSamimi\nMohammadreza Abdollahzadeh\nSadegh Alirezaie\nMostafa Asadi\nMohammadAmin Vahedinia\nJafar Akhondali\nH.Rostami\nEhsan Titish",
+                                                           "\nTaha H. Nouibat\nThanks to persepolis developers:\nAliReza AmirSamimi\nMohammadreza Abdollahzadeh\nSadegh Alirezaie\nMostafa Asadi\nMohammadAmin Vahedinia\nJafar Akhondali\nH.Rostami\nEhsan Titish",
                                                            "TRANSLATORS NOTE: YOU REALLY DON'T NEED TO TRANSLATE THIS PART!"))
 
 

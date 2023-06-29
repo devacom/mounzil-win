@@ -56,22 +56,23 @@ class MediaListFetcherThread(QThread):
 
         self.cookie_path = os.path.join(mounzil_tmp, '.{}{}'.format(time(), random()))
 
-        # youtube options must be added to ydl_options_dict in dictionary format
-        self.ydl_options_dict = {'compat_opts': 'youtube-dl',
+        # youtube options must be added to ydl_opts in dictionary format
+        self.ydl_opts = {'compat_opts': 'youtube-dl',
+                                    'dump_single_json': True,
                                     'noplaylist': True, 
                                     'no_warnings': True
                                         }
 
         # cookies
-        self.ydl_options_dict['cookies'] = str(self.cookie_path)
+        self.ydl_opts['cookies'] = str(self.cookie_path)
 
         # referer
         if 'referer' in video_dict.keys() and video_dict['referer']:
-            self.ydl_options_dict['referer'] = str(video_dict['referer'])
+            self.ydl_opts['referer'] = str(video_dict['referer'])
 
         # user_agent
         if 'user_agent' in video_dict.keys() and video_dict['user_agent']:
-            self.ydl_options_dict['user-agent'] = str(video_dict['user_agent'])
+            self.ydl_opts['user-agent'] = str(video_dict['user_agent'])
 
         # load_cookies
         if 'load_cookies' in video_dict.keys() and video_dict['load_cookies']:
@@ -87,14 +88,14 @@ class MediaListFetcherThread(QThread):
                 if 'referer' in video_dict.keys() and video_dict['proxy_user']:
                     ip_port = 'http://{}:{}@{}'.format(video_dict['proxy_user'], video_dict['proxy_passwd'], ip_port)
 
-                self.ydl_options_dict['proxy'] = str(ip_port)
+                self.ydl_opts['proxy'] = str(ip_port)
             except:
                 pass
 
         if 'download_user' in video_dict.keys() and video_dict['download_user']:
             try:
-                self.ydl_options_dict['username'] = str(video_dict['download_user'])
-                self.ydl_options_dict['password'] = str(video_dict['download_passwd'])
+                self.ydl_opts['username'] = str(video_dict['download_user'])
+                self.ydl_opts['password'] = str(video_dict['download_passwd'])
             except:
                 pass
 
@@ -109,7 +110,7 @@ class MediaListFetcherThread(QThread):
             cookie_file.write(self.cookies)
             cookie_file.close()
 
-            with yt_dlp.YoutubeDL(self.ydl_options_dict) as ydl:
+            with yt_dlp.YoutubeDL(self.ydl_opts) as ydl:
                 result = ydl.extract_info(self.youtube_link, download=False)
 
             #error=json.dumps(ydl.sanitize_info(result))

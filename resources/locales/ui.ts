@@ -30,22 +30,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mounzil/gui/about_ui.py" line="215"/>
-        <source>
-Taha H. Nouibat
-Thanks to perseplis developers:
-AliReza AmirSamimi
-Mohammadreza Abdollahzadeh
-Sadegh Alirezaie
-Mostafa Asadi
-MohammadAmin Vahedinia
-Jafar Akhondali
-H.Rostami
-Ehsan Titish</source>
-        <comment>TRANSLATORS NOTE: YOU REALLY DON&apos;T NEED TO TRANSLATE THIS PART!</comment>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../mounzil/gui/about_ui.py" line="238"/>
         <source>Developers</source>
         <translation type="unfinished"></translation>
@@ -63,6 +47,22 @@ Ehsan Titish</source>
     <message>
         <location filename="../../mounzil/gui/about_ui.py" line="243"/>
         <source>OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../mounzil/gui/about_ui.py" line="215"/>
+        <source>
+Taha H. Nouibat
+Thanks to persepolis developers:
+AliReza AmirSamimi
+Mohammadreza Abdollahzadeh
+Sadegh Alirezaie
+Mostafa Asadi
+MohammadAmin Vahedinia
+Jafar Akhondali
+H.Rostami
+Ehsan Titish</source>
+        <comment>TRANSLATORS NOTE: YOU REALLY DON&apos;T NEED TO TRANSLATE THIS PART!</comment>
         <translation type="unfinished"></translation>
     </message>
 </context>

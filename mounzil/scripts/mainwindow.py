@@ -2861,6 +2861,13 @@ class MainWindow(MainWindow_Ui):
                                QCoreApplication.translate("mainwindow_src_ui_tr",
                                                           "mounzil is trying to connect!be patient!"),
                                10000, 'warning', parent=self)
+                    notifySend("Try to killing Aria2")
+                    subprocess.Popen(['killall', 'aria2c'],
+                             stderr=subprocess.PIPE,
+                             stdout=subprocess.PIPE,
+                             stdin=subprocess.PIPE,
+                             shell=False)
+                    progress_window.resume_pushButton.setEnabled(True)
 
     # this method called if user presses pause button in MainWindow
 
