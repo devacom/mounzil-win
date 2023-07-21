@@ -30,3 +30,4 @@ package() {
     python setup.py install --root="$pkgdir" --optimize=1 --skip-build
 }
 # vim:set ts=4 sw=4:
+
