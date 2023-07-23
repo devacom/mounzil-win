@@ -314,7 +314,7 @@ QHeaderView::section
 QCheckBox
 {
     spacing: 0.5ex;
-    outline: none;
+    outline: yes;
     color: #31363b;
     margin-bottom: 0.2ex;
     opacity: 200;
@@ -348,7 +348,7 @@ QGroupBox::indicator:unchecked:pressed
 
 QCheckBox::indicator:checked
 {
-    border-image: url(:/light fusion/checkbox_checked.svg);
+    border-image: url(:/light fusion/ok.svg);
 }
 
 QCheckBox::indicator:checked:hover,
