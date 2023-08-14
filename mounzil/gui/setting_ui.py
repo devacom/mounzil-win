@@ -534,7 +534,8 @@ class Setting_Ui(QWidget):
         window_verticalLayout.addLayout(buttons_horizontalLayout)
 
         # set style_tab for default
-        self.setting_tabWidget.setCurrentIndex(3)
+        #self.setting_tabWidget.setCurrentIndex(3)
+        self.setting_tabWidget.setCurrentIndex(1)
 
         # labels and translations
         self.setWindowTitle(QCoreApplication.translate("setting_ui_tr", "Preferences"))
