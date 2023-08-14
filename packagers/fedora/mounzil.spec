@@ -21,6 +21,7 @@ Mounzil is a download manager and a GUI for aria2 powered by Python.
  - Multi-segment downloading
  - Scheduling downloads
  - Download queue
+ - Download youtube videos and more ...
 
 
 
