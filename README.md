@@ -11,7 +11,7 @@ Mounzil is a download manager based on Mounzil which is a graphical user interfa
 - Multi-segment downloading
 - Scheduling downloads
 - Download queuing
-- and many more!
+- Download youtube videos and more ...
 
 ### Credits
 
