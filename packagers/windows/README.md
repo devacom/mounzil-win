@@ -58,10 +58,15 @@ Open power shell or Windows CMD or [git bash](https://git-scm.com/download/win) 
 - now mounzil should run as a python script. If you get some error you may had mistake. Open  an issue [here](https://github.com/devacom/mounzil-windows-package-build/issues), We will help you :)
 
 # step 3: build
-Now let's build mounzil!
+There are 2 methods to build Mounzil
+
+1. Auto:
+
 The easy way to build is to run make.bat from packagers\windows folder.
 
-place `version.py` and `mounzil.ico` in perseplois folder.
+2. Manual:
+ 
+Place `version.py` and `mounzil.ico` in perseplois folder.
 
 run Windows cmd or powershell (as Admin) and enter mounzil folder so build mounzil by pyinstaller with this command:
 
