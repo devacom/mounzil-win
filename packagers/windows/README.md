@@ -61,7 +61,9 @@ Open power shell or Windows CMD or [git bash](https://git-scm.com/download/win) 
 There are 2 methods to build Mounzil
 
 1. Auto:
+
 Extract ffmpeg files in `packagers\windows\ffmpeg`
+
 Run `make.bat` from `packagers\windows` folder.
 
 2. Manual:
