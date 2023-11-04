@@ -62,7 +62,7 @@ There are 2 methods to build Mounzil
 
 1. Auto:
 
-The easy way to build is to run make.bat from packagers\windows folder.
+The easy way to build is to run 'make.bat' from 'packagers\windows' folder.
 
 2. Manual:
  
