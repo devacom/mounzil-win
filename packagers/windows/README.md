@@ -57,8 +57,9 @@ Open power shell or Windows CMD or [git bash](https://git-scm.com/download/win) 
 
 - now mounzil should run as a python script. If you get some error you may had mistake. Open  an issue [here](https://github.com/devacom/mounzil-windows-package-build/issues), We will help you :)
 
-# step 3: build and freeze
+# step 3: build
 Now let's build mounzil!
+The easy way to build is to run make.bat from packagers\windows folder.
 
 place `version.py` and `mounzil.ico` in perseplois folder.
 
